@@ -1,0 +1,28 @@
+test1.py - 1 ultrasonic sensor, 1 door, detect match with "a3.txt", door activate by ultrasonic sensor
+
+projectver1.py - 2 ultrasonic sensor, 2 door, detect match with "a3.txt", door activate by ultrasonic sensor and matching case to "a3.txt"
+
+test2.py - 1 ultrasonic sensor, 1 door, write to odoo database, door activated by ultrasonic sensor
+
+vnc viewer(note)->put cm4's display on pc:
+- connect cm4 to pc using vnc viewer
+- vnc viewer need cm4's ip address, username(myro), password(myro@123)
+
+
+
+cm4 boot:
+1. put jumper cap on BOOT & GND pin
+2. install rpiboot (window installer)
+3. connect board to pc (slave port)(turn the cm4 on)
+4. run rpiboot
+5. use rPi Imager
+
+
+stage 1(alpha test) obj:
+camera set up on the gate
+license plate detected
+gate open when car detected by ultrasonic sensor
+result on database so improvement can be made (better ocr, different cam angle)
+
+stage 2:
+gate activation switch from ultrasonic sensor to license plate based on collected data(in database)
